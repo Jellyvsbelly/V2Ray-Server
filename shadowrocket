@@ -15,7 +15,6 @@ vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.45.70:8880?mode=gun&security
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.231.205.186:8880/?type=grpc&encryption=none#☬☬Nima™™ 🇫🇷 grpc
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.231.205.248:8880/?type=grpc&encryption=none#☬☬Nima™™ 🇫🇷 grpc
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.231.205.246:8880?mode=gun&security=none&encryption=none&type=grpc&serviceName=#☬☬Nima™™ 🇫🇷 grpc
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@45.89.111.250:8880?encryption=none&security=none&type=grpc#☬☬Nima™™ 🇬🇧 grpc
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.45.90:8880?mode=gun&security=none&encryption=none&fp=chrome&type=grpc#☬☬ 𝙽𝚒𝚖𝚊™ 🏳️ grpc
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.231.205.234:8880?encryption=none&security=none&type=grpc#☬☬ 𝙽𝚒𝚖𝚊™ 🏳️ grpc
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.231.205.253:8880?type=grpc&mode=gun&security=none#☬☬ 𝙽𝚒𝚖𝚊™ 🏳️ grpc
@@ -28,8 +27,4 @@ vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.231.205.231:8880?encryption=non
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.45.95:8880?mode=gun&security=none&encryption=none&type=grpc#☬☬ 𝙽𝚒𝚖𝚊™ 🏳️ grpc
 vless://96a1b724-68d2-4f4d-ab25-38ecd83577bc@ipw.gfdv54cvghhgfhgj-njhgj64.info:8443?security=tls&encryption=none&type=ws&host=IyFpLkXk10.jOoLaJoOlA.OrG&path=/&sni=IyFpLkXk10.jOoLaJoOlA.OrG&fp=chrome#☬ 𝙽𝚒𝚖𝚊™ 🇺🇸 ws
 vless://e9979910-79d1-4621-a93c-b2a579c44ba7@104.25.210.16:8880?path=/TJhZjFeb0fQLVntH?ed=2560&security=&alpn=http/1.1&encryption=none&host=vngsupply.ip-ddns.com&fp=chrome&type=ws&sni=vngsuPPly.IP-dDNs.CoMتعداد#☬ 𝙽𝚒𝚖𝚊™ 🇺🇸 ws
-vless://092f6989-74a2-5deb-841c-46622fd8f96d@151.101.66.133:443?security=tls&sni=clearcreditrepair.com&type=ws&host=O-ELi-V2-RAY.COM&fp=chrome#☬ 𝙽𝚒𝚖𝚊™ 🇺🇸 ws
 vless://75fde681-ec64-4654-86fa-30732e8e179c@162.159.129.11:443?path=/assets&security=tls&alpn=h3&encryption=none&host=nginx.nscl.ir&type=ws&sni=NGINX.NSCl.IR#☬ 𝙽𝚒𝚖𝚊™ 🇺🇸 ws
-vless://8fe30358-c761-4520-8c2f-167c83fbcde2@tr.g2games.ir:443?mode=auto&path=/api/v3/&security=reality&encryption=none&extra={ "xPaddingBytes": "100-1000" }&pbk=DKQyh2lWWoRu_LqqthobUZwJtYn1ch-49zOFpKHKryM&host=www.microsoft.com&fp=chrome&spx=/&type=xhttp&sni=www.microsoft.com&sid=0ea91a0e#☬ 𝙽𝚒𝚖𝚊™ 🇹🇷 ws
-vless://219d848d-60f2-4321-8275-72b9b575b37e@104.17.30.230:443?security=tls&sni=qaa.zhuk.us.kg&type=ws&host=qaa.zhuk.us.kg&path=/?ed=2560#☬ 𝙽𝚒𝚖𝚊™ 🇺🇸 ws
-vless://71ed6628-5870-4d19-8a52-f2a3ba3d4898@162.159.153.82:443?security=tls&sni=aaa.zhuk.us.kg&type=ws&host=aaa.zhuk.us.kg&path=/youlingkaishi#☬ 𝙽𝚒𝚖𝚊™ 🇺🇸 ws
