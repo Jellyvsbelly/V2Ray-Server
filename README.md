@@ -53,8 +53,6 @@
 [دانلود فایل Shadowsocks](https://raw.githubusercontent.com/Jellyvsbelly/V2Ray-Server/refs/heads/main/ss-server)  
 ![QR SS](https://raw.githubusercontent.com/Jellyvsbelly/V2Ray-Server/main/qr/qr_Shadowsocks_ss:__.png)
 
-> ☝️ QRها باید در مسیر `/qr/` در مخزن شما آپلود شوند. اگر فایل‌های QR را نداری، از بخش پایین این فایل دریافت کن و در فولدر `qr` مخزن GitHub قرار بده.
-
 ---
 
 ## 🧠 نکات مهم
