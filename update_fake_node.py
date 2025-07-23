@@ -1,40 +1,26 @@
-import json
 import random
+from datetime import datetime
 
 FILE_PATH = "grpc-server"
 
-# مقداردهی الکی
+# ساخت متن کانفیگ جعلی
 days_left = random.randint(1, 7)
 gb_left = random.randint(1, 20)
 
-# کانفیگ ساختگی
-fake_node = {
-    "v": "2",
-    "ps": f"⚠️ {days_left} روز و {gb_left} گیگ باقی مانده",
-    "add": "fake.domain.com",
-    "port": "443",
-    "id": "00000000-0000-0000-0000-000000000000",
-    "aid": "0",
-    "net": "tcp",
-    "type": "none",
-    "host": "",
-    "path": "/",
-    "tls": "tls"
-}
+fake_link = f"vless://00000000-0000-0000-0000-000000000000@fake.domain.com:443?type=grpc&encryption=none#⚠️ {days_left} روز و {gb_left} گیگ مونده"
 
-# خواندن لیست فعلی (base64 نیست؟)
+# خواندن فایل اصلی
 with open(FILE_PATH, "r", encoding="utf-8") as f:
-    try:
-        config = json.load(f)
-    except:
-        config = []
+    lines = f.readlines()
 
-# حذف کانفیگ قبلی جعلی
-config = [node for node in config if not node["ps"].startswith("⚠️")]
+# حذف کانفیگ‌های فیک قبلی (اونی که با ⚠️ شروع می‌شن)
+lines = [line for line in lines if not "⚠️" in line]
 
-# افزودن کانفیگ جدید
-config.append(fake_node)
+# اضافه کردن کانفیگ جدید به آخر فایل
+lines.append(fake_link + "\n")
 
 # ذخیره‌سازی
 with open(FILE_PATH, "w", encoding="utf-8") as f:
-    json.dump(config, f, ensure_ascii=False, indent=2)
+    f.writelines(lines)
+
+print(f"✅ کانفیگ فیکی با {days_left} روز و {gb_left} گیگ اضافه شد.")
