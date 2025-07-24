@@ -2,7 +2,7 @@ name: Update Fake VLESS Node
 
 on:
   schedule:
-    - cron: '0 */3 * * *'  # هر 3 ساعت یکبار
+    - cron: '0 */3 * * *'
   workflow_dispatch:
 
 jobs:
@@ -12,6 +12,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.GH_PAT }}
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -26,5 +28,5 @@ jobs:
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
         git add grpc-server
-        git commit -m "Add fake VLESS node with usage info" || echo "Nothing to commit"
+        git commit -m "Add fake node" || echo "Nothing to commit"
         git push
