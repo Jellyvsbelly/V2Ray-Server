@@ -2,8 +2,8 @@ name: Update Fake V2Ray Node
 
 on:
   schedule:
-    - cron: "0 */3 * * *"  # هر 3 ساعت یک بار
-  workflow_dispatch:       # اجرای دستی از داخل GitHub
+    - cron: "0 */3 * * *"  # هر 3 ساعت یکبار اجرا
+  workflow_dispatch:       # امکان اجرای دستی
 
 jobs:
   update-fake-node:
@@ -24,7 +24,7 @@ jobs:
       - name: Run fake node updater script
         run: python update_fake_node.py
 
-      - name: Commit and push changes
+      - name: Commit and force push changes
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
@@ -32,5 +32,4 @@ jobs:
           git add grpc-server
           git commit -m "🔁 Auto update fake node" || echo "No changes to commit"
 
-          git pull --rebase origin main
-          git push origin main
+          git push --force origin main
