@@ -1,0 +1,33 @@
+name: 🔁 Auto Update Fake Node
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: pip install requests
+
+    - name: Run update script
+      run: python update_grpc.py
+
+    - name: Commit and push
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "github-actions@users.noreply.github.com"
+        git add grpc-server
+        git commit -m "🔁 Auto update fake node" || echo "No changes to commit"
+        git push
